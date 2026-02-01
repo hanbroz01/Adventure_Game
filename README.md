@@ -1,23 +1,64 @@
-# A Knight’s Mission
+# 🏰 Adventure Game
 
-A text-based adventure game built in Python, played entirely in the terminal.  
-The game focuses on branching logic, state management, and user-driven progression.
+A **text-based Python adventure game** showcasing **object-oriented programming** and **randomized events**.
 
-Players navigate a magical forest, make strategic decisions, collect items, and face random encounters in order to rescue the Queen. Certain paths and encounters require specific items to progress, resulting in multiple win and loss conditions.
+## Description
 
-## Key Features
-- Branching narrative with player-driven choices
-- Inventory-based progression system
-- Randomised creatures, weapons, and locations
-- Terminal-based user interaction with timed output
-- Multiple endings and replay support
+- Demonstrates Python OOP principles:
+  - Classes, inheritance, and methods
+  - Item collection
+  - Random events and challenges
+- Features:
+  - Player can explore areas, collect items, and face creatures
+  - Combat / puzzles / decision-making
+  - Console feedback for all actions
 
-## Technologies
-- Python 3
-- Standard library only (`random`, `time`)
+## Installation
 
-## How to Run
+1. Ensure you have **Python 3.x** installed.
+2. Clone the repository:
+
 ```bash
-git clone https://github.com/hanbroz01/Adventure_Game.git
-cd Adventure_Game
-Adventure_Game.py
+git clone https://github.com/hanbroz01/adventure-game.git
+cd adventure-game
+python main.py
+```
+
+## Usage
+
+- Running `main.py` starts the adventure game.
+- Players make decisions by typing options (e.g., 1 or 2).
+- Collect items, face creatures, and solve puzzles.
+- Console output displays:
+  - Items you find
+  - Creature encounters
+  - Damage dealt / health changes
+  - Success or failure of actions
+
+## Example Gameplay
+
+⚠️ **Note:** This is a deterministic demo for testing mechanics. Real gameplay will include randomized events and decisions.
+
+## Features (Current)
+
+- Item collection and inventory
+- Random creature encounters
+- Combat and puzzles
+- Clear console feedback for actions
+
+## Planned Features
+
+- Multiple areas to explore
+- More complex decision trees
+- Turn-based combat with stats
+- Endings based on choices and items
+- Optional GUI or text-based map
+
+## Notes
+
+- Built as a **learning/prototype project**
+- Focuses on readability, structure, and extensibility
+- Code is intentionally kept simple to clearly demonstrate OOP and game mechanics
+
+⭐ **Why this project?**  
+This repository is part of my learning journey and is designed to clearly demonstrate how object-oriented design can be applied to interactive Python programs.
