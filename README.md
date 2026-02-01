@@ -4,14 +4,12 @@ A **text-based Python adventure game** showcasing **object-oriented programming*
 
 ## Description
 
-- Demonstrates Python OOP principles:
-  - Classes, inheritance, and methods
-  - Item collection
-  - Random events and challenges
+- Uses **Python functions** to handle game events, choices, and random encounters.
 - Features:
-  - Player can explore areas, collect items, and face creatures
-  - Combat / puzzles / decision-making
-  - Console feedback for all actions
+  - Randomized items and creatures
+  - Player choices that affect outcomes
+  - Color-coded console output
+  - Simple combat and puzzle mechanics
 
 ## Installation
 
@@ -32,15 +30,11 @@ python main.py
 - Console output displays:
   - Items you find
   - Creature encounters
-  - Damage dealt / health changes
   - Success or failure of actions
 
 ## Example Gameplay
 
 <img width="738" height="411" alt="Screenshot 2026-02-01 at 11 57 05" src="https://github.com/user-attachments/assets/0b887e2c-381a-4b19-9fe7-02b86061f4ed" />
-
-
-⚠️ **Note:** This is a deterministic demo for testing mechanics. Real gameplay will include randomized events and decisions.
 
 ## Features (Current)
 
@@ -59,9 +53,11 @@ python main.py
 
 ## Notes
 
-- Built as a **learning/prototype project**
-- Focuses on readability, structure, and extensibility
-- Code is intentionally kept simple to clearly demonstrate OOP and game mechanics
+- Built as a learning and prototype project.
+- Code is intentionally kept simple to clearly demonstrate basic Python programming mechanics.
+- ⚠️ Note: This project currently uses procedural programming. It is structured for clarity and learning rather than object-oriented design.
+- Focuses on readability, structure, and step-by-step gameplay logic.
+- Safe for testing Python control flow, functions, and randomization.
 
 ⭐ **Why this project?**  
 This repository is part of my learning journey and is designed to clearly demonstrate how object-oriented design can be applied to interactive Python programs.
