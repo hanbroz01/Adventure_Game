@@ -59,6 +59,6 @@ python main.py
 - Focuses on readability, structure, and step-by-step gameplay logic.
 - Safe for testing Python control flow, functions, and randomization.
 
-⭐ **Why this project?**
+## ⭐ Why this project?
 
 This repository is part of my learning journey and is designed to clearly demonstrate how object-oriented design can be applied to interactive Python programs.
