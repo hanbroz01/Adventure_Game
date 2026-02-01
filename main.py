@@ -99,7 +99,7 @@ def cross_bridge(items):  # Crosses bridge encounters random creature
         print_pause("You choose to cross the bridge...")
         random_creature(items)  # prints a random_creature
         print_pause("You do not posses the Magic Sword that you "
-                    " need to kill it!")
+                    "need to kill it!")
         print_pause("You are defeated and unable to continue your mission.")
 
 
