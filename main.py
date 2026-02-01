@@ -1,3 +1,17 @@
+"""
+# ----------------------------
+# 🏰 Adventure Game - A Knights Mission
+# # ----------------------------
+
+- Player explores a magical forest to rescue a Queen.
+- Encounters random creatures, collects items, and makes choices.
+- Includes a guessing game for the final challenge.
+- Uses colored text to enhance the user experience.
+
+Demonstrates basic Python programming: functions, loops, conditionals,
+lists, randomization, and user input validation.
+"""
+
 import time
 import random
 
@@ -209,9 +223,9 @@ def last_item_search(items):
 
 def wizard(items):
     color = 20
-    choice1 = text_color("Enter 1 to talk to the Wizzard again.", color, True)
+    choice1 = text_color("Enter 1 to talk to the Wizard again.", color, True)
     choice2 = text_color("Enter 2 to continue walking.         ", color, True)
-    print_pause("The Wizzard points to the table beside them...")
+    print_pause("The Wizard points to the table beside them...")
     if "dagger" in items:  # If dagger already collected
         print_pause("The table is empty. You already took the dagger.")
     else:
@@ -286,17 +300,46 @@ def chance(items):
 
 
 def end():
+    """
+    End-of-game message function.
+    
+    Prints a closing message to the player when they have decided
+    not to play again or have finished a game session.
+    
+    Demonstrates separation of concerns by handling only end-of-game logic.
+    """
     print_pause("Better luck next time...if you're "
                 "brave enough to try again that is...")
 
 
 def play():
+    """
+    Single game session function.
+    
+    Initializes a new game session by:
+    - Creating an empty list `items` to track player inventory.
+    - Calling the game introduction functions (`intro1` and `intro2`) 
+      which handle narrative, setup, and initial player choices.
+    
+    Encapsulates one full playthrough attempt in a clean, reusable function.
+    """
     items = []
     intro1()
     intro2(items)
 
 
 def play_again():
+    """
+    Prompt the player to decide if they want to play again.
+    
+    Features:
+    - Displays a colored "GAME OVER" message using `text_color`.
+    - Waits 2 seconds to let the player read the message.
+    - Uses `valid_input` to ensure the player enters a valid response ('yes' or 'no').
+    
+    Returns:
+        str: 'yes' if the player wants to play again, 'no' otherwise.
+    """
     color = 160
     text_red = text_color("-->GAME OVER--<", color)
     print_pause(f"{text_red}")
@@ -305,6 +348,16 @@ def play_again():
 
 
 def game():
+    """
+    Main game loop function - Continuously runs the game until the player chooses not to play again.
+    
+    Flow:
+    1. Call `play()` to start a single session.
+    2. Call `play_again()` to check if the player wants to continue.
+    3. If the player enters 'no', exit the loop and call `end()`.
+    
+    Encapsulates full program control flow and ensures proper loop management.
+    """
     while True:
         play()
         if play_again() == 'no':
@@ -312,5 +365,12 @@ def game():
     end()
 
 
+# Entry point of the program
 if __name__ == '__main__':
+    """
+    Ensures the game runs only when this script is executed directly,
+    not when imported as a module.
+    
+    Calls the main game loop.
+    """
     game()
