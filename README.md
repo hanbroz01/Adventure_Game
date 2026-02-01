@@ -37,6 +37,9 @@ python main.py
 
 ## Example Gameplay
 
+<img width="738" height="411" alt="Screenshot 2026-02-01 at 11 57 05" src="https://github.com/user-attachments/assets/0b887e2c-381a-4b19-9fe7-02b86061f4ed" />
+
+
 ⚠️ **Note:** This is a deterministic demo for testing mechanics. Real gameplay will include randomized events and decisions.
 
 ## Features (Current)
